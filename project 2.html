@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autumn Sign-In</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <h2>Sign In</h2>
+            <form>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button type="submit">Login</button>
+                <div class="options">
+                    <a href="#" class="forgot-password">Forget Password</a>
+                    <a href="#" class="sign-up">Signup</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+/* Base styling */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://img.freepik.com/free-vector/young-woman-wearing-coat-hat-scarf-riding-bicycle-park-fall-foliage-from-wind-is-blowing-autumn-season-cartoon-character-vector-illustration_1150-52716.jpg?t=st=1724345224~exp=1724348824~hmac=c4881c2323bacac3d20c9890ad823c69aa124c70d57080b8c6bf4c20be70b13d&w=1060');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass-card {
+  width: 350px;
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form styling */
+.glass-card h2 {
+  color: #7c3d0b; /* Similar to the brownish-red color in the image */
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.glass-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.5); /* Slightly opaque white background */
+  color: #7c3d0b; /* Text color matching the brownish-red */
+  font-size: 16px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.glass-card button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #7c3d0b; /* Brownish-red background for the button */
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.glass-card button:hover {
+  background: #a35522; /* Slightly lighter shade for hover */
+}
+
+/* Options styling */
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.options a {
+  color: #7c3d0b; /* Matching the text color */
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.options a:hover {
+  color: #a35522; /* Slightly lighter shade on hover */
+}
